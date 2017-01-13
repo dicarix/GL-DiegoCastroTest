@@ -23,17 +23,21 @@
                         <div class="bar">
                             <div id="progress" class="progress"></div>
                             <span id="indicatorArrow"class="indicator-arrow">^</span>
-                            <div id="indicator" class="indicator"></div>
+                            <div id="indicator" class="indicator">$Var-current</div>
                         </div>
-                        <div id="target" class="target"></div>
+                        <div id="target" class="target">
+                            <p> Target $ Var-total </p>
+                        </div>
                     </div>
-                    <div id="info" class="info"></div>
+                    <div id="info" class="info">
+                        <i class="info-icon"></i> You need $ Var-needed more to reach your target.
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <script src="/scripts/main.js"></script>
+    <script src="/scripts/main.bundle.js"></script>
 </body>
 
 </html>

@@ -9,7 +9,7 @@
         background-color: $brand-dark-color;
         border: 1px solid $brand-dark-color;
         border-radius: 5px;
-        color: white;
+        color: $brand-white-color;
         p {
             margin: 2px;
             font-weight: bold;
@@ -17,7 +17,7 @@
     }
     .content {
         font-family: Arial, Helvetica, sans-serif;
-        background-color: white;
+        background-color: $brand-white-color;
         border: 1px solid $brand-dark-color;
         border-radius: 5px;
         width: 474px;
@@ -36,11 +36,11 @@
             width: 50%;
             height: 12px;
             background-color: #ece7e7;
-            @include box-shadow(0px, 1px, 5px, grey,true);
+            @include box-shadow(0, 1px, 5px, grey,true);
             .progress {
                 height: 100%;
                 background-color: $progress-bar-color;
-                @include box-shadow(0px, 1px, 5px, grey);
+                @include box-shadow(0, 1px, 5px, grey);
             }
             .indicator {
                 position: absolute;
@@ -56,7 +56,7 @@
             border: 1px solid $brand-dark-color;
             width: 60px;
             height: 52px;
-            color: white;
+            color: $brand-white-color;
             font-weight: bold;
             background-color: #898989;
             display: inline-flex;
@@ -85,7 +85,7 @@
         @include box-shadow(-6px, -5px, 2px, #36586f, true);
         &::after {
             content: 'i';
-            color: white;
+            color: $brand-white-color;
             position: relative;
             top: 1px;
             font-size: 15px;
