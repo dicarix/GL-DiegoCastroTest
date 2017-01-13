@@ -36,11 +36,11 @@
             width: 50%;
             height: 12px;
             background-color: #ece7e7;
-            box-shadow: inset 0px 1px 5px grey;
+            @include box-shadow(0px, 1px, 5px, grey,true);
             .progress {
                 height: 100%;
                 background-color: $progress-bar-color;
-                box-shadow: 0px 1px 5px grey;
+                @include box-shadow(0px, 1px, 5px, grey);
             }
             .indicator {
                 position: absolute;
@@ -67,12 +67,30 @@
         }
     }
     .reached {
-            color: #707070;
-            font-weight: bold;
+        color: #707070;
+        font-weight: bold;
+    }
+    .info {
+        text-align: center;
+        margin-top: 30px;
+        color: #707070;
+    }
+    .info-icon {
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        background-color: #5a88a6;
+        border-radius: 50%;
+        //box-shadow($top, $left, $blur, $color, $inset: false)
+        @include box-shadow(-6px, -5px, 2px, #36586f, true);
+        &::after {
+            content: 'i';
+            color: white;
+            position: relative;
+            top: 1px;
+            font-size: 15px;
+            margin: 0 auto;
+            font-style: italic;
         }
-        .info {
-            text-align: center;
-            margin-top: 30px;
-            color: #707070;
-        }
+    }
 }

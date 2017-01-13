@@ -38,10 +38,14 @@
       width: 50%;
       height: 12px;
       background-color: #ece7e7;
+      -webkit-box-shadow: inset 0px 1px 5px grey;
+      -moz-box-shadow: inset 0px 1px 5px grey;
       box-shadow: inset 0px 1px 5px grey; }
       #popover-m .progress-content .bar .progress {
         height: 100%;
         background-color: #5aaf54;
+        -webkit-box-shadow: 0px 1px 5px grey;
+        -moz-box-shadow: 0px 1px 5px grey;
         box-shadow: 0px 1px 5px grey; }
       #popover-m .progress-content .bar .indicator {
         position: absolute;
@@ -68,6 +72,23 @@
     text-align: center;
     margin-top: 30px;
     color: #707070; }
+  #popover-m .info-icon {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: #5a88a6;
+    border-radius: 50%;
+    -webkit-box-shadow: inset -6px -5px 2px #36586f;
+    -moz-box-shadow: inset -6px -5px 2px #36586f;
+    box-shadow: inset -6px -5px 2px #36586f; }
+    #popover-m .info-icon::after {
+      content: 'i';
+      color: white;
+      position: relative;
+      top: 1px;
+      font-size: 15px;
+      margin: 0 auto;
+      font-style: italic; }
 
 .wrapper {
   position: relative;
