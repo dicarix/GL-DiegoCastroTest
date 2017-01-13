@@ -1,0 +1,79 @@
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+#popover-m {
+  background-color: #e8e8e8;
+  border: 1px solid #030303;
+  border-radius: 5px;
+  display: none;
+  height: 205px;
+  top: 25%; }
+  #popover-m .title {
+    background-color: #030303;
+    border: 1px solid #030303;
+    border-radius: 5px;
+    color: white; }
+    #popover-m .title p {
+      margin: 2px;
+      font-weight: bold; }
+  #popover-m .content {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    border: 1px solid #030303;
+    border-radius: 5px;
+    width: 474px;
+    height: 144px;
+    margin: 13px 24px 0; }
+  #popover-m .bar-container {
+    margin-left: 40px; }
+  #popover-m .progress-content {
+    margin-top: 14px; }
+    #popover-m .progress-content .bar {
+      display: inline-block;
+      position: relative;
+      border-radius: 5px;
+      width: 50%;
+      height: 12px;
+      background-color: #ece7e7;
+      box-shadow: inset 0px 1px 5px grey; }
+      #popover-m .progress-content .bar .progress {
+        height: 100%;
+        background-color: #5aaf54;
+        box-shadow: 0px 1px 5px grey; }
+      #popover-m .progress-content .bar .indicator {
+        position: absolute;
+        top: 20px; }
+      #popover-m .progress-content .bar .indicator-arrow {
+        position: absolute;
+        top: 10px;
+        font-weight: bold; }
+    #popover-m .progress-content .target {
+      border: 1px solid #030303;
+      width: 60px;
+      height: 52px;
+      color: white;
+      font-weight: bold;
+      background-color: #898989;
+      display: inline-flex; }
+      #popover-m .progress-content .target p {
+        text-align: center;
+        transform: translateY(-45%); }
+  #popover-m .reached {
+    color: #707070;
+    font-weight: bold; }
+  #popover-m .info {
+    text-align: center;
+    margin-top: 30px;
+    color: #707070; }
+
+.wrapper {
+  position: relative;
+  height: 500px; }
+
+.progress-link {
+  font-family: Arial,sans-serif; }
+
+/*# sourceMappingURL=main.css.map */

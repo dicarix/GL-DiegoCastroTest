@@ -1,0 +1,78 @@
+#popover-m {
+    background-color: $brand-light-color;
+    border: 1px solid $brand-dark-color;
+    border-radius: 5px;
+    display: none;
+    height: 205px;
+    top: 25%;
+    .title {
+        background-color: $brand-dark-color;
+        border: 1px solid $brand-dark-color;
+        border-radius: 5px;
+        color: white;
+        p {
+            margin: 2px;
+            font-weight: bold;
+        }
+    }
+    .content {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+        border: 1px solid $brand-dark-color;
+        border-radius: 5px;
+        width: 474px;
+        height: 144px;
+        margin: 13px 24px 0;
+    }
+    .bar-container {
+        margin-left: 40px;
+    }
+    .progress-content {
+        margin-top: 14px;
+        .bar {
+            display: inline-block;
+            position: relative;
+            border-radius: 5px;
+            width: 50%;
+            height: 12px;
+            background-color: #ece7e7;
+            box-shadow: inset 0px 1px 5px grey;
+            .progress {
+                height: 100%;
+                background-color: $progress-bar-color;
+                box-shadow: 0px 1px 5px grey;
+            }
+            .indicator {
+                position: absolute;
+                top: 20px;
+            }
+            .indicator-arrow {
+                position: absolute;
+                top: 10px;
+                font-weight: bold;
+            }
+        }
+        .target {
+            border: 1px solid $brand-dark-color;
+            width: 60px;
+            height: 52px;
+            color: white;
+            font-weight: bold;
+            background-color: #898989;
+            display: inline-flex;
+            p {
+                text-align: center;
+                transform: translateY(-45%);
+            }
+        }
+    }
+    .reached {
+            color: #707070;
+            font-weight: bold;
+        }
+        .info {
+            text-align: center;
+            margin-top: 30px;
+            color: #707070;
+        }
+}
