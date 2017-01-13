@@ -49,18 +49,11 @@ var Modal = function () {
                     bar.style.width = width + '%';
                 }
             }, 10);
-
-            // document.getElementById('popover-m').style.display = 'block';
-
-            // var id = setInterval(function frame() {
-            //     
-            // }, 10);
         }
     }, {
         key: 'hide',
         value: function hide() {
             document.getElementById('popover-m').style.display = 'none';
-            // console.log('hide');
         }
     }, {
         key: 'target',
@@ -88,41 +81,3 @@ var Modal = function () {
 }();
 
 var modal = new Modal(125, 56);
-
-// var popUpDemo = {};
-
-// popUpDemo.show = function show() {
-
-//     // var currentProgress = 56
-//     // var totalProgress = 125
-//     // var percentage = (currentProgress * 100) / totalProgress;
-//     var bar = document.getElementById("progress");
-//     var width = 1;
-
-//     var info = document.getElementById('info').innerHTML;
-//     info = info.replace('Var-needed', totalProgress - currentProgress);
-//     document.getElementById('info').innerHTML = info;
-
-//     var targetTotal = document.getElementById('target').innerHTML;
-//     targetTotal = targetTotal.replace('Var-total', totalProgress);
-//     document.getElementById('target').innerHTML = targetTotal;
-
-//     document.getElementById('popover-m').style.display = 'block';
-//     document.getElementById('indicatorArrow').style.left = percentage - 2 + '%';
-//     document.getElementById('indicator').style.left = percentage - 6 + '%';
-
-//     var id = setInterval(function frame() {
-//         if (width >= percentage) {
-//             clearInterval(id);
-//         } else {
-//             width++;
-//             document.getElementById('indicator').innerHTML = '$' + parseInt((totalProgress / 100) * width);
-//             bar.style.width = width + '%';
-//         }
-//     }, 10);
-
-// }
-
-// popUpDemo.hide = function hide() {
-//     // /document.getElementById('popover-m').style.display = 'none';
-// }
